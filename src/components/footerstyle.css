@@ -1,0 +1,37 @@
+.footer{
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.top i{
+    font-size: 1.5rem;
+    padding: 0 .3rem;
+    color: white;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.bottom a{
+text-decoration: none;
+color: white;
+}
+.bottom div{
+    display: flex;
+    flex-direction: column;
+
+}
+.bottom h3{
+    padding: 1rem;
+}

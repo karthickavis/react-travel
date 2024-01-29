@@ -1,0 +1,15 @@
+.aboutus{
+    padding: 5rem 2rem 2rem 2rem;
+
+}
+.aboutus h1:nth-child(1){
+    padding: 1rem;
+}
+.ourhistory h1,.ourmission h1,.ourvision h1{
+    text-align: start;
+}
+.ourhistory p,.ourmission p,.ourvision p{
+    text-align: start;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
