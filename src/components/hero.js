@@ -1,5 +1,5 @@
 import "./herostyle.css";
-import malimg from '../assets/maldives-ile-beach-sun-38238.jpeg';
+
 
 function Hero (){
     return(
@@ -18,7 +18,7 @@ function Hero (){
             
 
         </div> */}
-        <div className="hero-content">
+            <div className="hero-content">
             <div className="h-c">
                 <h1>Your Story Your Journey</h1>
                 <p>Choose Your favourite Destination !</p>

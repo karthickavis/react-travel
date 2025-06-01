@@ -1,9 +1,6 @@
 import './tripstyle.css';
 import Data from './tripdata.js';
-import Malimg from "../assets/malimg.jpeg"
-import Kashmir from "../assets/kashmirimg.jpeg"
-import London from "../assets/londonimf.jpeg" 
-import Aus from "../assets/ausimg.jpeg"
+
 import { useState } from 'react';
 
 

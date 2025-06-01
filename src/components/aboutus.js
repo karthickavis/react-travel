@@ -1,6 +1,5 @@
 import "./aboutustyle.css";
-import { Button } from "primereact/button";
-import {job} from "../assets/Online Job Application.png";
+
 import Online from "../assets/online-service - Copy.jpg";
 import Travel from "../assets/travel.jpeg";
 import C1 from "../assets/cutomer1.jpg";
@@ -25,7 +24,7 @@ return(
 
   <div className="first-content">
    <div className="image">
-      <img src={Online}></img>
+      <img src={Online} alt="hii"></img>
    </div>
    <div className="first-contentsss">
    <div>
@@ -58,7 +57,7 @@ return(
       </div>
    
       <div className="image">
-      <img src={Travel}></img>
+      <img src={Travel} alt="travel"></img>
    </div>
    </div>
   </div>
@@ -69,7 +68,7 @@ return(
       <div className="customer">
 
       <div className="customer-card">
-         <img src={C1}></img>
+         <img src={C1} alt="c1"></img>
          <div className="customer-rating">
             <h3>"An unforgettable experience!"</h3>
             <p>I had an amazing time booking my trip through this website! Everything was seamless — from choosing my destination to finalizing the itinerary. Highly recommend it!</p>
@@ -77,7 +76,7 @@ return(
          </div>
       </div>
       <div className="customer-card">
-         <img src={C2}></img>
+         <img src={C2} alt="c2"></img>
          <div className="customer-rating">
             <h3>"Hassle-free and budget-friendly!"</h3>
             <p>I found the perfect vacation package within my budget. The site was easy to navigate, and customer support was super helpful. Will definitely book again!</p>
@@ -85,7 +84,7 @@ return(
          </div>
       </div>
       <div className="customer-card">
-         <img src={C3}></img>
+         <img src={C3} alt="c3"></img>
          <div className="customer-rating">
             <h3>"Perfect for solo travelers!"</h3>
             <p>As a solo traveler, I loved how this site provided safe, affordable options. It gave me the confidence to explore new places worry-free!</p>

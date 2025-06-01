@@ -20,7 +20,7 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay:true,
+    // autoplay:true,
     autoplay:2000,
     responsive: [
       {
