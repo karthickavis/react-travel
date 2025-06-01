@@ -14,12 +14,12 @@ export const AuthProvider = ({ children }) => {
     // Navigate immediately after login (optional)
     navigate("/home", { replace: true });
   }
-,[]);
+,[setUser,navigate]);
 
   const logout = useCallback(() => {
     setUser(null);
     navigate("/", { replace: true });
-  },[]);
+  },[setUser,navigate]);
 
   const value = useMemo(() => ({ user, login, logout }), [user,login,logout]);
 
