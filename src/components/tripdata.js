@@ -1,6 +1,5 @@
 
-
-export default[{
+const data=[{
  title:"Kashmir",
  price:"30,000",
  days:"6",
@@ -109,3 +108,4 @@ export default[{
    
    }
 ]
+export default data;

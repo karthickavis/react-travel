@@ -35,7 +35,7 @@ function LogIn () {
        navigate("/home");
       setIsSubmit(false);
     }   
-    },[formErrors]);
+    },[formErrors,isSubmit,login,navigate]);
     const validate = (values) =>{
       const errors = {};
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;

@@ -1,5 +1,5 @@
 
-import { createContext, useContext, useMemo } from "react";
+import { createContext, useCallback, useContext, useMemo } from "react";
 import { Navigate, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useLocalStorage } from "./useLocalStorage";
 
@@ -9,16 +9,17 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useLocalStorage("user", null);
   const navigate = useNavigate();
 
-  const login = (data) => {
+  const login = useCallback((data) => {
     setUser(data);
     // Navigate immediately after login (optional)
     navigate("/home", { replace: true });
-  };
+  }
+,[]);
 
-  const logout = () => {
+  const logout = useCallback(() => {
     setUser(null);
     navigate("/", { replace: true });
-  };
+  },[]);
 
   const value = useMemo(() => ({ user, login, logout }), [user,login,logout]);
 
