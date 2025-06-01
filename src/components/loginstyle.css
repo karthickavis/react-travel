@@ -2,17 +2,28 @@
     /* border: 1px solid; */
  
     padding: 6rem 2rem 2rem 2rem;
+    background-image: url(../assets/maldives-ile-beach-sun-38238.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
    
 
+}
+.container h1{
+    text-align: center;
+    padding: 1rem;
 }
 .ui-form{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     display: flex;
     flex-direction: column;
+    background-color: white;
     width: 35%;
     margin: auto;
     gap: 10px;
     padding: 1rem;
+    border-radius: 20px;
    
 }
 label{
@@ -20,9 +31,10 @@ label{
 
 }
 .field input{
-    width: 80%;
+    width: 100%;
 list-style: none;
 border: 1px solid #2a2a2a;
+padding: 1rem;
    
 }
 button{

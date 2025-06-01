@@ -1,0 +1,21 @@
+.carosel{
+
+    width: 90%;
+     height: 75vh;
+    margin-left: 5%;
+    padding: .5rem; 
+    /* border: 1px solid black;    */
+}
+.carosel h1{
+    padding: .5rem .3rem 1.5rem .3rem;
+    text-align: center;
+}
+.carosel img{
+    height: 50vh;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+
+}

@@ -1,8 +1,5 @@
 import "./destinationstyle.css";
-import Paris1 from "../assets/paris1.jpeg";
-import Paris2 from "../assets/paris2.jpeg";
-import New1 from "../assets/newyork1.jpeg";
-import New2 from "../assets/newyork2.jpeg";
+
 import { Component } from "react";
 
 

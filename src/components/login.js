@@ -1,5 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useCallback } from "react";
 import "./loginstyle.css"
+// import { useAuth } from '../../../Auth/authGuard';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from "./authentication/authGuard";
 
 function LogIn () {
     const initialValues = {username : "" , email : "", password : ""}
@@ -7,22 +10,31 @@ function LogIn () {
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
 
+    const {login} = useAuth();
+     const navigate = useNavigate();
+
 
     const handleChange = (e) =>{
         const {name,value} = e.target;
         setFormValues({...formValues,[name]:value});
+        setFormErrors(validate({...formValues,[name]:value}));
+        setIsSubmit(false);
     };
 
     const handleSubmit = (e) =>{
        e.preventDefault();
        setFormErrors(validate(formValues));
        setIsSubmit(true);
-
-    };
+       
+      
+ };
+    
     useEffect(()=>{
-if(Object.keys(formErrors).length===0 && isSubmit){
-    console.log(formValues)
-}
+    if(Object.keys(formErrors).length===0 && isSubmit){
+      login(formValues);
+       navigate("/home");
+      setIsSubmit(false);
+    }   
     },[formErrors]);
     const validate = (values) =>{
       const errors = {};
@@ -49,7 +61,7 @@ if(Object.keys(formErrors).length===0 && isSubmit){
     return(
        <div className="container">
         <form onSubmit={handleSubmit}>
-            <h1>Login Form</h1>
+            <h1>LOGIN</h1>
             <div className="ui divider"></div>
             <div className="ui-form">
                 <div className="field">
@@ -58,7 +70,7 @@ if(Object.keys(formErrors).length===0 && isSubmit){
                     value={formValues.username}
                     onChange={handleChange}
                     />
-                </div>
+                </div> 
                 <p>{formErrors.username}</p>
                 <div className="field">
                     {/* <label>Email</label> */}
@@ -66,7 +78,7 @@ if(Object.keys(formErrors).length===0 && isSubmit){
                     placeholder="Email"
                   name="email"  id="email"
                     value={formValues.email}
-                    onChange={handleChange}
+                     onChange={handleChange}
                      />
                 </div>
                 <p>{formErrors.email}</p>
@@ -86,5 +98,6 @@ if(Object.keys(formErrors).length===0 && isSubmit){
 
        </div>
     )
+
 }
 export default LogIn;

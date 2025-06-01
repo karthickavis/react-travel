@@ -11,6 +11,9 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.top h1,.top p{
+    padding: .3rem .2rem;
+}
 .top i{
     font-size: 1.5rem;
     padding: 0 .3rem;
@@ -30,8 +33,26 @@ color: white;
 .bottom div{
     display: flex;
     flex-direction: column;
+    
+   
 
 }
 .bottom h3{
-    padding: 1rem;
+   padding: 0px 0px 1rem 0px;
+}
+@media screen  and (max-width:456px){
+.top{
+ flex-direction: column;  
+ justify-content: center;
+ align-items: center;
+
+ padding: .5rem;
+}
+.top p{
+    padding: .3rem 0px;
+}
+.top h1{
+    text-align: center;
+   
+}
 }

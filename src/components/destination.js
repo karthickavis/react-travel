@@ -9,8 +9,11 @@ const Destination = () => {
     return(
     <div className="destination">
 
+   <div className="p-d">
     <h1>Popular Destination</h1>
-    <p>Tour give you the opportunity to see a lot, within a time frame .</p>
+    <h4>Tour give you the opportunity to see a lot, within a time frame .</h4>
+   </div>
+   
 
     <DestinationData
     className="first-des"

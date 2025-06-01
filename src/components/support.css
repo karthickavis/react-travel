@@ -1,0 +1,67 @@
+.support{
+    width: 100%;
+    /* background-color: red; */
+    padding: .5rem;
+    /* background-color: lightblue; */
+    
+}
+.support-content{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background-color: lightblue; */
+}
+.support-content div{
+    width: 220px;
+    height: 300px;
+    padding: .5rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+    background-color: white; /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border for glass effect */
+    /* box-shadow: 10px 4px 10px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */  
+    border-radius: 20px;
+    
+}
+/* .support-content div:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+   
+} */
+
+.support p{
+    text-align: justify;
+}
+div svg{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+   
+
+    
+}
+.s-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  
+}
+.support h1{
+    padding: .8rem .1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:491px){
+    .support-content div{
+       width: 100%;
+       height: auto;
+    }
+}

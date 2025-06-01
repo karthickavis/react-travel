@@ -1,27 +1,27 @@
  import Navbar from "../components/navbar";
  import Hero from "../components/hero";
 import Destination from "../components/destination";
-import Trip from "../components/trip";
+// import Trip from "../components/trip";
 import Footer from "../components/footer";
-import webimg from "../assets/imgggg.jpg"
+import Slider from "../components/slider";
+import Support from "../components/support";
+
+
+        
 function Home (){
     return(
         <>
          <Navbar/>
          
-        <Hero
-        cName="hero"
-        // heroimg="https://iso.500px.com/wp-content/uploads/2015/08/travel_cover-1500x1000.jpeg"
-        heroimg="https://free4kwallpapers.com/uploads/originals/2020/08/03/the-traveler-%7C-a-simple-flat-designed-wallpaper.jpg"
-        title="Your Journey Your Story"
-        text="Choose Your Favourite Destination."
-        buttonText="Travel Plan"
-        url="/"
-        btnClass="show"
+        <Hero/>
 
-        />
+<Support/>
+ 
+       
+      
         <Destination/>
-        <Trip/>
+        <Slider/>
+        
         <Footer/>
         </>
     )
